@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<title>Click Blocks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="avgrund.css">
+
+<script src="jquery-1.11.2.min.js"></script>
+<script src="main.js"></script>
+<script src="jquery.plugin.min.js"></script>
+<script src="jquery.countdown.js"></script>
+<script src="jquery.countdown-zh-TW.js"></script> 
+<script src="jquery.avgrund.min.js"></script>
+<script src="jquery.prettySocial.min.js"></script>
+</head>
+<body onLoad="system();">
+
+ <div id="top">
+    <div id="font">Click blocks</div>
+    <div id="system">System:</div>
+    <div id="score" style="left:20%">Score：0</div>
+    <div id="time" style="left:0%">Time:</div>
+   
+    
+    <canvas id="block"></canvas>
+ </div>
+  <div id="icon">
+    <table>
+  <tr>
+    <td>Social</td>
+  </tr>
+  <tr>
+    
+   <td><a href="#" data-type="facebook" data-url="http://kurodz.github.io/3D-CSS-MENU" data-title="Click Blocks" data-description="Best Game Ever." data-media="clickbox.png" class="prettySocial fa fa-facebook"><div id="td1">
+</div></a></td>
+  </tr>
+  
+  <tr>
+    <td><a href="#" data-type="twitter" data-url="http://kurodz.github.io/3D-CSS-MENU" data-description="Best Game Ever." data-via="Click Blocks" class="prettySocial fa fa-twitter"><div id="td2"></div></a>
+</td>
+  </tr>
+     <tr>
+    <td>
+    <a href="#" data-type="googleplus" data-url="http://kurodz.github.io/3D-CSS-MENU" data-description="Best Game Ever." class="prettySocial fa fa-google-plus"><div id="td5"></div></a>
+</td>
+  </tr>
+
+  <tr>
+    <td>
+    <a href="http://www.youtube.com"><div id="td3"></div></a>
+</td>
+  </tr>
+  <tr>
+    <td id="td4"onclick="window.location.href='http://instagram.com'"></td>
+  </tr>
+
+</table>      
+<div id="rank">各人排行</div>
+<div id="restart" onClick="window.location.href='main.html'";>重新開始</div>
+<div id="back" onClick="window.location.href='index.html'";>返回主頁</div>
+</div>   
+<div class="border">
+  
+  
+      <div id="container">
+        <div id="shape" class="cube backfaces">
+             <div class="plane one"></div>
+             <div class="plane two"></div>
+             <div class="plane three"></div>
+             <div class="plane four"></div>
+             <div class="plane five"></div>
+             <div class="plane six"></div>
+        </div>
+        
+      </div>
+      
+       <div id="container1">
+         <div id="shape1" class="cube backfaces">
+              <div class="plane one"></div>
+              <div class="plane two"></div>
+              <div class="plane three"></div>
+              <div class="plane four"></div>
+              <div class="plane five"></div>
+              <div class="plane six"></div>
+         </div>
+        </div>
+        
+        <div id="container2">
+         <div id="shape2" class="cube backfaces">
+              <div class="plane one"></div>
+              <div class="plane two"></div>
+              <div class="plane three"></div>
+              <div class="plane four"></div>
+              <div class="plane five"></div>
+              <div class="plane six"></div>
+         </div>
+        </div>
+        
+        <div id="container3">
+         <div id="shape3" class="cube backfaces">
+              <div class="plane one"></div>
+              <div class="plane two"></div>
+              <div class="plane three"></div>
+              <div class="plane four"></div>
+              <div class="plane five"></div>
+              <div class="plane six"></div>
+         </div>
+        </div>
+        
+        <div id="container4">
+         <div id="shape4" class="cube backfaces">
+             <div class="plane one"></div>
+             <div class="plane two"></div>
+             <div class="plane three"></div>
+             <div class="plane four"></div>
+             <div class="plane five"></div>
+             <div class="plane six"></div>
+         </div>
+        </div>
+        
+        <div id="container5">
+         <div id="shape5" class="cube backfaces">
+            <div class="plane one"></div>
+            <div class="plane two"></div>
+            <div class="plane three"></div>
+            <div class="plane four"></div>
+            <div class="plane five"></div>
+            <div class="plane six"></div>
+         </div>
+        </div>
+</div>
+
+
+<div class="content" style="display:none;" style="overflow-x:scroll;">
+<h1>各人排行<img src="crown.png" width="50" height="50" alt=""/></h1>
+<iframe src="rank.html"></iframe>
+
+<a href="#" onClick="dbDrop();">清除紀錄</a>
+</div>
+
+
+<div class="chose" style="display:none;" style="overflow-x:scroll;">
+<a href="#" onClick="easy();" class="easy">簡單</a>
+<a href="#" onClick="normal();" class="normal">普通</a>
+<a href="#" onClick="hard();" class="hard">困難</a>
+</div>
+	<script type="text/javascript" class="source">
+			$('.prettySocial').prettySocial();
+			$('#rank').click(function(){$('.content').show()})
+			$('#rank').avgrund({
+			width: 640,
+			height: 640,
+			showClose: true,
+			showCloseText: 'Close',
+    		template: $('.content')
+});
+		</script>
+
+</body>
+</html>
